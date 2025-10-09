@@ -5,13 +5,13 @@ import Rating from '../assets/icon-ratings.png';
 const AppDetails = () => {
     return (
         <div className="max-w-11/12 mx-auto my-20">
-            <div className="flex items-center gap-10 border-b-1 border-gray-200 pb-7">
+            <div className="flex items-center gap-10 border-b-1 border-gray-300 pb-7">
                 <div className="bg-gray-300 h-[350px] rounded-[8px] w-[35%]">
                     <img className="w-full" src={Image} alt="" />
                 </div>
 
                 <div className="w-full">
-                    <div className="border-b-1 border-gray-200 pb-7">
+                    <div className="border-b-1 border-gray-300 pb-7">
                         <h4 className="text-[32px] font-bold mb-2">
                             company name: title
                         </h4>

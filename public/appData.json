@@ -1,13 +1,13 @@
 [
     {
-        "image": "https://i.ibb.co/1G3pTp5W/todoist.webp",
+        "image": "https://i.ibb.co.com/hJDF2wQB/1.png",
         "title": "Todoist",
         "companyName": "Doist",
         "id": 1,
         "description": "Task manager and to-do list with priorities, labels, and cross-platform sync.",
         "size": "18MB",
         "reviews": "125K reviews",
-        "ratingAvg": "4.1 ⭐",
+        "ratingAvg": "4.1",
         "downloads": "15M+",
         "ratings": [
             { "name": "1 star", "count": 10000 },
@@ -18,14 +18,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/kVKyvrz/notion.png",
+        "image": "https://i.ibb.co.com/Cpk5BSXY/notion.png",
         "title": "Notion",
         "companyName": "Notion Labs",
         "id": 2,
         "description": "All-in-one workspace for notes, docs, databases, and lightweight project management.",
         "size": "85MB",
         "reviews": "210K reviews",
-        "ratingAvg": "4.3 ⭐",
+        "ratingAvg": "4.3",
         "downloads": "27M+",
         "ratings": [
             { "name": "1 star", "count": 5000 },
@@ -36,14 +36,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/gZCffct/trello.webp",
+        "image": "https://i.ibb.co.com/zhH58PbS/Trello.jpg",
         "title": "Trello",
         "companyName": "Atlassian",
         "id": 3,
         "description": "Kanban boards for visual task tracking, great for teams and simple workflows.",
         "size": "42MB",
         "reviews": "95K reviews",
-        "ratingAvg": "3.9 ⭐",
+        "ratingAvg": "3.9",
         "downloads": "12M+",
         "ratings": [
             { "name": "1 star", "count": 8000 },
@@ -54,14 +54,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/ZzkJ85J/asana.jpg",
+        "image": "https://i.ibb.co.com/Tq0cttzq/asana.jpg",
         "title": "Asana",
         "companyName": "Asana, Inc.",
         "id": 4,
         "description": "Powerful task & project manager designed for teams with timeline and workload views.",
         "size": "76MB",
         "reviews": "68K reviews",
-        "ratingAvg": "3.9 ⭐",
+        "ratingAvg": "3.9",
         "downloads": "8M+",
         "ratings": [
             { "name": "1 star", "count": 3000 },
@@ -72,14 +72,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/W4T2bxk/ClickUp.webp",
+        "image": "https://i.ibb.co.com/67QvV3H1/ClickUp.webp",
         "title": "ClickUp",
         "companyName": "ClickUp",
         "id": 5,
         "description": "Highly configurable productivity platform — tasks, docs, goals, time tracking all in one.",
         "size": "110MB",
         "reviews": "98K reviews",
-        "ratingAvg": "4.0 ⭐",
+        "ratingAvg": "4.0",
         "downloads": "14M+",
         "ratings": [
             { "name": "1 star", "count": 4000 },
@@ -90,14 +90,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/wrYTMVN/toggl-track.png",
+        "image": "https://i.postimg.cc/fynZDVbB/toggl-track.png",
         "title": "Toggl Track",
         "companyName": "Toggl OY",
         "id": 6,
         "description": "Simple time tracking and reporting for freelancers and teams.",
         "size": "12MB",
         "reviews": "22K reviews",
-        "ratingAvg": "4.2 ⭐",
+        "ratingAvg": "4.2",
         "downloads": "4M+",
         "ratings": [
             { "name": "1 star", "count": 1000 },
@@ -108,14 +108,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/DP7SZsx/rescue-time.jpg",
+        "image": "https://i.postimg.cc/1tMcZqM9/rescue-time.jpg",
         "title": "RescueTime",
         "companyName": "RescueTime Inc.",
         "id": 7,
         "description": "Automatic time and distraction tracking that shows where your time goes.",
         "size": "9MB",
         "reviews": "15K reviews",
-        "ratingAvg": "4.4 ⭐",
+        "ratingAvg": "4.4",
         "downloads": "1.2M+",
         "ratings": [
             { "name": "1 star", "count": 500 },
@@ -126,14 +126,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/xq0Gh3c/habitica.png",
+        "image": "https://i.postimg.cc/zvtjTgg5/habitica.png",
         "title": "Habitica",
         "companyName": "HabitRPG Inc.",
         "id": 8,
         "description": "Gamified habit tracker and to-do list that turns goals into RPG quests.",
         "size": "25MB",
         "reviews": "12K reviews",
-        "ratingAvg": "4.1 ⭐",
+        "ratingAvg": "4.1",
         "downloads": "900K+",
         "ratings": [
             { "name": "1 star", "count": 800 },
@@ -144,14 +144,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/wrP8CJ8/microsoft.png",
+        "image": "https://i.postimg.cc/853cWkzv/microsoft.png",
         "title": "Microsoft To Do",
         "companyName": "Microsoft",
         "id": 9,
         "description": "Cloud-based task management app integrated with Outlook & Microsoft 365.",
         "size": "24MB",
         "reviews": "50K reviews",
-        "ratingAvg": "4.2 ⭐",
+        "ratingAvg": "4.2",
         "downloads": "8M+",
         "ratings": [
             { "name": "1 star", "count": 2000 },
@@ -162,14 +162,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/dwtPMbP/evernote.jpg",
+        "image": "https://i.postimg.cc/gJRnPXpv/evernote.jpg",
         "title": "Evernote",
         "companyName": "Evernote Corporation",
         "id": 10,
         "description": "Note taking, web clipping, knowledge management with sync across devices.",
         "size": "45MB",
         "reviews": "140K reviews",
-        "ratingAvg": "4.1 ⭐",
+        "ratingAvg": "4.1",
         "downloads": "25M+",
         "ratings": [
             { "name": "1 star", "count": 7000 },
@@ -180,14 +180,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/XfC2nMM/slack.png",
+        "image": "https://i.postimg.cc/2j7SFfSm/slack.png",
         "title": "Slack",
         "companyName": "Slack Technologies",
         "id": 11,
         "description": "Team communication & collaboration with channels, messaging, file sharing.",
         "size": "60MB",
         "reviews": "90K reviews",
-        "ratingAvg": "4.0 ⭐",
+        "ratingAvg": "4.0",
         "downloads": "20M+",
         "ratings": [
             { "name": "1 star", "count": 6000 },
@@ -198,14 +198,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/LDX404D/Google-Drive-Logo.jpg",
+        "image": "https://i.postimg.cc/jj1ZF9qS/google.jpg",
         "title": "Google Drive",
         "companyName": "Google",
         "id": 12,
         "description": "Cloud storage and file sharing with real-time collaboration tools.",
         "size": "120MB",
         "reviews": "200K reviews",
-        "ratingAvg": "4.3 ⭐",
+        "ratingAvg": "4.3",
         "downloads": "50M+",
         "ratings": [
             { "name": "1 star", "count": 10000 },
@@ -216,14 +216,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/b5ns6YM/google-calendar.jpg",
+        "image": "https://i.postimg.cc/xTQghLQv/google-calendar.jpg",
         "title": "Google Calendar",
         "companyName": "Google",
         "id": 13,
         "description": "Calendar app for scheduling, reminders, events, and integration with Google services.",
         "size": "30MB",
         "reviews": "120K reviews",
-        "ratingAvg": "4.2 ⭐",
+        "ratingAvg": "4.2",
         "downloads": "40M+",
         "ratings": [
             { "name": "1 star", "count": 8000 },
@@ -234,14 +234,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/fmncdck/miro.webp",
+        "image": "https://i.postimg.cc/t4M3q600/miro.webp",
         "title": "Miro",
         "companyName": "Miro",
         "id": 14,
         "description": "Collaborative whiteboard platform for visual collaboration, ideation, and mapping.",
         "size": "48MB",
         "reviews": "60K reviews",
-        "ratingAvg": "4.2 ⭐",
+        "ratingAvg": "4.2",
         "downloads": "10M+",
         "ratings": [
             { "name": "1 star", "count": 3000 },
@@ -252,14 +252,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/QFyq2NH/basecamp.jpg",
+        "image": "https://i.postimg.cc/BZp1ZFDx/basecamp.jpg",
         "title": "Basecamp",
         "companyName": "Basecamp, LLC",
         "id": 15,
         "description": "Project management & team collaboration with message boards, to-dos, and docs.",
         "size": "55MB",
         "reviews": "45K reviews",
-        "ratingAvg": "3.8 ⭐",
+        "ratingAvg": "3.8",
         "downloads": "5M+",
         "ratings": [
             { "name": "1 star", "count": 4000 },
@@ -270,14 +270,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/5Wngt4q/forest.png",
+        "image": "https://i.postimg.cc/hvVnjTZM/forest.png",
         "title": "Forest",
         "companyName": "Seekrtech",
         "id": 16,
         "description": "Focus timer app that grows virtual trees as you stay away from your phone.",
         "size": "10MB",
         "reviews": "30K reviews",
-        "ratingAvg": "4.4 ⭐",
+        "ratingAvg": "4.4",
         "downloads": "8M+",
         "ratings": [
             { "name": "1 star", "count": 1500 },
@@ -288,14 +288,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/ZzsXb8W/freedom.png",
+        "image": "https://i.postimg.cc/jj9Y4ZG9/freedom.png",
         "title": "Freedom",
         "companyName": "Eighty Percent Solutions",
         "id": 17,
         "description": "Blocks distractions by limiting access to apps/websites across devices.",
         "size": "14MB",
         "reviews": "40K reviews",
-        "ratingAvg": "4.2 ⭐",
+        "ratingAvg": "4.2",
         "downloads": "7M+",
         "ratings": [
             { "name": "1 star", "count": 2000 },
@@ -306,14 +306,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/tMGdNC8/any-do.jpg",
+        "image": "https://i.postimg.cc/QxbLyX2d/any-do.jpg",
         "title": "Any.do",
         "companyName": "Any.do",
         "id": 18,
         "description": "Task list, reminders, calendar & assistant integrated in one productivity app.",
         "size": "28MB",
         "reviews": "70K reviews",
-        "ratingAvg": "4.1 ⭐",
+        "ratingAvg": "4.1",
         "downloads": "12M+",
         "ratings": [
             { "name": "1 star", "count": 3000 },
@@ -324,14 +324,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/LdQ9mbs/tmetric.png",
+        "image": "https://i.postimg.cc/3J3Vpskw/tmetric.png",
         "title": "TMetric",
         "companyName": "TMetric",
         "id": 19,
         "description": "Time tracking software to monitor productivity & generate reports.",
         "size": "22MB",
         "reviews": "35K reviews",
-        "ratingAvg": "4.0 ⭐",
+        "ratingAvg": "4.0",
         "downloads": "6M+",
         "ratings": [
             { "name": "1 star", "count": 1500 },
@@ -342,14 +342,14 @@
         ]
     },
     {
-        "image": "https://i.ibb.co/1JjWWv8/pyrus.jpg",
+        "image": "https://i.postimg.cc/vBW2xhMD/pyrus.jpg",
         "title": "Pyrus",
         "companyName": "Simply Good Software",
         "id": 20,
         "description": "Workflow automation & document / task management platform.",
         "size": "33MB",
         "reviews": "28K reviews",
-        "ratingAvg": "3.9 ⭐",
+        "ratingAvg": "3.9",
         "downloads": "4M+",
         "ratings": [
             { "name": "1 star", "count": 1000 },

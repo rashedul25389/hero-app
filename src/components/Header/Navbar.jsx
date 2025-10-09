@@ -54,12 +54,12 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </div>
-                    <a
-                        href="/"
+                    <NavLink
+                        to={'/'}
                         className="flex justify-between items-center gap-1 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent text-[16px] font-bold leading-[26px] tracking-normal">
                         <img className="w-10" src={Logo} alt="Hero.io" />{' '}
                         HERO.IO
-                    </a>
+                    </NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="flex justify-between items-center gap-5 p-3">
@@ -87,12 +87,12 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a
-                        href="https://github.com/"
+                    <NavLink
+                        to={'https://github.com/'}
                         className="flex items-center gap-2 px-5 py-2 rounded-lg bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white font-inter text-[16px] font-semibold">
                         <FaGithub className="w-5 h-5" />
                         Contribute
-                    </a>
+                    </NavLink>
                 </div>
             </div>
         </div>
