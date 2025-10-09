@@ -1,11 +1,17 @@
-import React from 'react';
-import { NavLink } from 'react-router';
+import React, { useState } from 'react';
 import useApps from '../Hooks/useApps';
 import Loading from '../components/Loading/Loading';
 import AppCard from './Home/AppCard';
 
 const AllApps = () => {
     const { apps, loading } = useApps();
+    const [search, setSearch] = useState('');
+    const searchTerm = search.trim().toLocaleLowerCase();
+    const searchedApps = searchTerm
+        ? apps.filter((app) =>
+              app.title.toLocaleLowerCase().includes(searchTerm)
+          )
+        : apps;
 
     return (
         <div className="max-w-11/12 mx-auto text-center my-20">
@@ -15,7 +21,7 @@ const AllApps = () => {
                 Millions
             </p>
             <div className="flex justify-between items-center">
-                <p>Apps Found: ({apps.length})</p>
+                <p>({apps.length}) Apps Found</p>
                 <label className="input">
                     <svg
                         className="h-[1em] opacity-50"
@@ -31,20 +37,25 @@ const AllApps = () => {
                             <path d="m21 21-4.3-4.3"></path>
                         </g>
                     </svg>
-                    <input type="search" required placeholder="Search" />
+                    <input
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
+                        type="search"
+                        required
+                        placeholder="Search App"
+                    />
                 </label>
             </div>
-            <NavLink to={'/appDetails'}>
-                {loading ? (
-                    <Loading />
-                ) : (
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 justify-between items-center w-full gap-4">
-                        {apps.map((app) => (
-                            <AppCard key={app.id} app={app} />
-                        ))}
-                    </div>
-                )}
-            </NavLink>
+
+            {loading ? (
+                <Loading />
+            ) : (
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 justify-between items-center w-full gap-4">
+                    {searchedApps.map((app) => (
+                        <AppCard key={app.id} app={app} />
+                    ))}
+                </div>
+            )}
         </div>
     );
 };

@@ -6,7 +6,7 @@ import AppCard from './AppCard';
 import useApps from '../../Hooks/useApps';
 
 const TrendingApps = () => {
-    const { loading, apps } = useApps();
+    const {  apps, loading } = useApps();
     const trendingApp = apps.slice(0, 8);
     return (
         <div className="max-w-11/12 mx-auto text-center my-20">
