@@ -1,0 +1,27 @@
+body{
+    background-color: #F5F5F5;
+}
+li a.active {
+    background: var(
+        --Linear,
+        linear-gradient(
+            125.07deg,
+            rgba(99, 46, 227, 1),
+            rgba(159, 98, 242, 1) 100%
+        )
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom: 3px solid;
+    padding-bottom: 5px;
+    border-image: linear-gradient(
+            125.07deg,
+            rgba(99, 46, 227, 1),
+            rgba(159, 98, 242, 1) 100%
+        )
+        1;
+
+    text-decoration-line: underline;
+    text-transform: capitalize;
+}
