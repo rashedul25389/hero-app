@@ -1,9 +1,12 @@
 import React from 'react';
-import Download from '../assets/icon-downloads.png';
-import Rating from '../assets/icon-ratings.png';
 import { NavLink } from 'react-router';
+import useApps from '../Hooks/useApps';
+import Loading from '../components/Loading/Loading';
+import AppCard from './Home/AppCard';
 
 const AllApps = () => {
+    const { apps, loading } = useApps();
+
     return (
         <div className="max-w-11/12 mx-auto text-center my-20">
             <h1 className="text-5xl font-bold mb-4">Our All Applications</h1>
@@ -12,7 +15,7 @@ const AllApps = () => {
                 Millions
             </p>
             <div className="flex justify-between items-center">
-                <p>(132) Apps Found</p>
+                <p>Apps Found: ({apps.length})</p>
                 <label className="input">
                     <svg
                         className="h-[1em] opacity-50"
@@ -32,36 +35,15 @@ const AllApps = () => {
                 </label>
             </div>
             <NavLink to={'/appDetails'}>
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 justify-between items-center w-full gap-4">
-                    <div className="p-4 bg-white shadow-[0px_10px_20px_-12px_rgba(0,0,0,0.1)] rounded-[4px]">
-                        <div className="bg-gray-300 h-[316px] rounded-[8px]">
-                            <img className="w-full" src={Image} alt="" />
-                        </div>
-                        <div>
-                            <p className="text-[20px] font-medium py-4 text-left">
-                                company name: title
-                            </p>
-                            <div className="flex justify-between items-center">
-                                <p className="btn border-0 shadow-soft bg-[rgba(241,245,232,1)] text-[#00d390] font-medium px-3">
-                                    <img
-                                        className="w-4 mr-1"
-                                        src={Download}
-                                        alt=""
-                                    />
-                                    25M
-                                </p>
-                                <p className="btn border-0 shadow-soft font-medium bg-[#fff0e1] text-[#ff8811]  px-3">
-                                    <img
-                                        className="w-4 mr-1"
-                                        src={Rating}
-                                        alt=""
-                                    />
-                                    4.5
-                                </p>
-                            </div>
-                        </div>
+                {loading ? (
+                    <Loading />
+                ) : (
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 justify-between items-center w-full gap-4">
+                        {apps.map((app) => (
+                            <AppCard key={app.id} app={app} />
+                        ))}
                     </div>
-                </div>
+                )}
             </NavLink>
         </div>
     );
