@@ -25,13 +25,13 @@ const Banner = () => {
                         </p>
                         <div className="flex justify-center items-center gap-4 my-10">
                             <a
-                                href=""
+                                href="https://play.google.com/store/games?hl=en"
                                 className="btn bg-white text-[#001931] border-[#d2d2d2] py-5 font-semibold text-[20px]">
                                 <img className="w-6" src={playStore} alt="" />{' '}
                                 Google Play
                             </a>
                             <a
-                                href=""
+                                href="https://www.apple.com/app-store/"
                                 className="btn bg-white text-[#001931] border-[#d2d2d2] py-5 font-semibold text-[20px]">
                                 <img className="w-6" src={appStore} alt="" />{' '}
                                 App Store

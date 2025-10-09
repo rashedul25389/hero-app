@@ -62,7 +62,7 @@ const Installation = () => {
                             </div>
                         </div>
                     </div>
-                    <button className="bg-[#00d390] text-white px-8 py-2 rounded-sm">
+                    <button className="bg-[#00d390] text-white px-8 py-2 rounded-sm cursor-pointer">
                         Uninstall
                     </button>
                 </div>
@@ -98,7 +98,7 @@ const Installation = () => {
                             </div>
                         </div>
                     </div>
-                    <button className="bg-[#00d390] text-white px-8 py-2 rounded-sm">
+                    <button className="bg-[#00d390] text-white px-8 py-2 rounded-sm cursor-pointer">
                         Uninstall
                     </button>
                 </div>
