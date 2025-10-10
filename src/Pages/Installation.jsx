@@ -13,7 +13,7 @@ import Loading from '../components/Loading/Loading';
 const Installation = () => {
     const { apps, loading } = useApps();
     const [installedApps, setInstalledApps] = useState([]);
-    const [sortBy, setSortBy] = useState('downloadsHighLow');
+    const [sortBy, setSortBy] = useState('High-Low');
 
     useEffect(() => {
         const installed = getInstalledApps();
@@ -36,33 +36,35 @@ const Installation = () => {
         });
     };
 
-    //*** */ Helper to convert 15M+ to numeric 15000000
-    const parseDownloads = (str) => {
+    // ✅ Convert K, M, B & MB sizes properly
+    const parseNumber = (str) => {
         if (!str) return 0;
         const num = parseFloat(str.replace(/[^\d.]/g, ''));
-        if (str.toLowerCase().includes('k')) return num * 1_000;
-        if (str.toLowerCase().includes('m')) return num * 1_000_000;
-        if (str.toLowerCase().includes('b')) return num * 1_000_000_000;
+        const lower = str.toLowerCase();
+        if (lower.includes('k')) return num * 1_000;
+        if (lower.includes('m') && !lower.includes('mb'))
+            return num * 1_000_000;
+        if (lower.includes('b')) return num * 1_000_000_000;
+        if (lower.includes('mb')) return num; // size in MB
+        if (lower.includes('gb')) return num * 1024; // convert GB to MB
         return num;
     };
 
-    //*** Sorting logic
+    // ✅ Sorting logic (সব একসাথে ঠিকভাবে কাজ করবে)
     const sortedApps = [...installedApps].sort((a, b) => {
         switch (sortBy) {
-            case 'downloadsHighLow':
-                return (
-                    parseDownloads(b.downloads) - parseDownloads(a.downloads)
-                );
-            case 'downloadsLowHigh':
-                return (
-                    parseDownloads(a.downloads) - parseDownloads(b.downloads)
-                );
-            case 'name':
-                return a.title.localeCompare(b.title);
+            case 'High-Low':
+                return parseNumber(b.downloads) - parseNumber(a.downloads);
+            case 'Low-High':
+                return parseNumber(a.downloads) - parseNumber(b.downloads);
+            case 'sizeHighLow':
+                return parseNumber(b.size) - parseNumber(a.size);
+            case 'sizeLowHigh':
+                return parseNumber(a.size) - parseNumber(b.size);
             case 'rating':
                 return parseFloat(b.ratingAvg) - parseFloat(a.ratingAvg);
-            case 'size':
-                return parseFloat(b.size) - parseFloat(a.size);
+            case 'name':
+                return a.title.localeCompare(b.title);
             default:
                 return 0;
         }
@@ -77,6 +79,7 @@ const Installation = () => {
                 Explore all installed apps you have downloaded on your device.
             </p>
 
+            {/* sorting options */}
             <div className="flex justify-between items-center mb-5">
                 <p className="text-2xl font-semibold">
                     {installedApps.length} Apps Found
@@ -85,18 +88,16 @@ const Installation = () => {
                     value={sortBy}
                     onChange={(e) => setSortBy(e.target.value)}
                     className="border border-gray-300 font-normal rounded p-1 cursor-pointer">
-                    <option value="downloadsHighLow">
-                        Downloads: High-Low
-                    </option>
-                    <option value="downloadsLowHigh">
-                        Downloads: Low-High
-                    </option>
-                    <option value="name">Sort by Name</option>
+                    <option value="High-Low">Downloads: High → Low</option>
+                    <option value="Low-High">Downloads: Low → High</option>
+                    <option value="sizeHighLow">Size: High → Low</option>
+                    <option value="sizeLowHigh">Size: Low → High</option>
                     <option value="rating">Sort by Rating</option>
-                    <option value="size">Sort by Size</option>
+                    <option value="name">Sort by Name</option>
                 </select>
             </div>
 
+            {/* Installed apps list */}
             {installedApps.length === 0 ? (
                 <p className="text-3xl text-gray-500 mt-10">
                     No apps installed yet 😢
@@ -145,7 +146,7 @@ const Installation = () => {
 
                             <button
                                 onClick={() => handleUninstall(app.id)}
-                                className="bg-green-400 hover:bg-red-500 text-white px-8 py-2 rounded-sm cursor-pointer transition-transform duration-300 hover:scale-103 hover:shadow-xl ">
+                                className="bg-green-400 hover:bg-red-500 text-white px-8 py-2 rounded-sm cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                                 Uninstall
                             </button>
                         </div>

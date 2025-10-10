@@ -13,7 +13,7 @@ const AppRatingChart = ({ ratings }) => {
     const chartData = [...ratings].reverse();
 
     return (
-        <div className="w-full h-64 md:h-80">
+        <div className="w-full h-64 md:h-80 border-2 rounded-lg border-green-500 p-5">
             <ResponsiveContainer width="100%" height="100%">
                 <BarChart
                     layout="vertical"
