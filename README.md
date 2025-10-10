@@ -1,16 +1,27 @@
-# React + Vite
+1.  App Name: Hero Apps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2.  Description
+    This project is a high-performance, responsive web application designed as a template for a modern single-page application (SPA). It provides a Web Application for handling real-time data, user authentication, and complex logic, ensuring a smooth and dynamic user experience across all devices.
 
-Currently, two official plugins are available:
+3.  Technology Stack
+    This application is built using the MERN Stack (React, Node.js), a popular, JavaScript-centric full-stack solution.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    Frontend (Client-Side)
+    The visual interface and user interaction layer.
 
-## React Compiler
+    HTML/CSS/JavaScript: The core languages of the web.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+    React: A powerful JavaScript library for building user interfaces, handling component state, and providing a fast, component-based view layer.
 
-## Expanding the ESLint configuration
+    Tailwind CSS: A utility-first CSS framework for rapid, responsive styling.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    DaisyUI: A component library that extends Tailwind CSS, providing pre-styled components for faster UI development.
+
+    Context API / Zustand: For state management across components.
+
+    Development & DevOps Tools
+    Git: Version control system.
+
+    npm: Package management.
+
+    VS Code: Primary development environment.

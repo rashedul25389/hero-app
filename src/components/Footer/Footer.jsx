@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from '../../assets/logo.png';
 import { RiTwitterXFill } from 'react-icons/ri';
 import { TiSocialFacebook, TiSocialLinkedin } from 'react-icons/ti';
+import { NavLink } from 'react-router';
 
 const Footer = () => {
     return (
@@ -18,9 +19,15 @@ const Footer = () => {
                 <div className="pt-8">
                     <h3 className="text-white mb-4">Social Links</h3>
                     <div className="flex justify-between items-center gap-4">
-                        <RiTwitterXFill className="bg-white rounded-full p-1 text-2xl" />
-                        <TiSocialLinkedin className="bg-white rounded-full p-1 text-2xl" />
-                        <TiSocialFacebook className="bg-white rounded-full p-1 text-2xl" />
+                        <NavLink to={'/'}>
+                            <RiTwitterXFill className="bg-white rounded-full p-1 text-2xl" />
+                        </NavLink>
+                        <NavLink to={'/'}>
+                            <TiSocialLinkedin className="bg-white rounded-full p-1 text-2xl" />
+                        </NavLink>
+                        <NavLink to={'/'}>
+                            <TiSocialFacebook className="bg-white rounded-full p-1 text-2xl" />
+                        </NavLink>
                     </div>
                 </div>
             </div>

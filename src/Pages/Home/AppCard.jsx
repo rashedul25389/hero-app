@@ -17,7 +17,7 @@ const AppCard = ({ app }) => {
                 </div>
                 <div>
                     <p className="text-[20px] font-medium py-4 text-left">
-                        {companyName}: {title}
+                        {title}: {companyName}
                     </p>
                     <div className="flex justify-between items-center">
                         <p className="btn border-0 shadow-soft bg-[rgba(241,245,232,1)] text-[#00d390] font-medium px-3">

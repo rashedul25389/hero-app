@@ -27,7 +27,6 @@ const TrendingApps = () => {
             <div className="mt-10 mx-auto w-fit rounded-sm bg-gradient-to-b from-[#632EE3] to-[#9F62F2] text-white font-semibold">
                 <NavLink
                     to={'/allapps'}
-                    // href="/allapps"
                     className="p-7 py-2 inline-block">
                     Show All
                 </NavLink>
