@@ -36,7 +36,6 @@ const Installation = () => {
         });
     };
 
-    // ✅ Convert K, M, B & MB sizes properly
     const parseNumber = (str) => {
         if (!str) return 0;
         const num = parseFloat(str.replace(/[^\d.]/g, ''));
@@ -45,12 +44,11 @@ const Installation = () => {
         if (lower.includes('m') && !lower.includes('mb'))
             return num * 1_000_000;
         if (lower.includes('b')) return num * 1_000_000_000;
-        if (lower.includes('mb')) return num; // size in MB
-        if (lower.includes('gb')) return num * 1024; // convert GB to MB
+        if (lower.includes('mb')) return num; 
+        if (lower.includes('gb')) return num * 1024;
         return num;
     };
 
-    // ✅ Sorting logic (সব একসাথে ঠিকভাবে কাজ করবে)
     const sortedApps = [...installedApps].sort((a, b) => {
         switch (sortBy) {
             case 'High-Low':
@@ -78,8 +76,7 @@ const Installation = () => {
             <p className="mb-10">
                 Explore all installed apps you have downloaded on your device.
             </p>
-
-            {/* sorting options */}
+            
             <div className="flex justify-between items-center mb-5">
                 <p className="text-2xl font-semibold">
                     {installedApps.length} Apps Found
@@ -96,8 +93,7 @@ const Installation = () => {
                     <option value="name">Sort by Name</option>
                 </select>
             </div>
-
-            {/* Installed apps list */}
+            
             {installedApps.length === 0 ? (
                 <p className="text-3xl text-gray-500 mt-10">
                     No apps installed yet 😢
