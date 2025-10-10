@@ -113,7 +113,7 @@ const AppDetails = () => {
                     ) : (
                         <button
                             onClick={handleInstall}
-                            className="bg-[#00d390] text-white px-7 py-[6px] rounded-sm cursor-pointer">
+                            className="bg-[#00d390] text-white px-7 py-[6px] rounded-sm cursor-pointer transition-transform duration-300 hover:scale-103 hover:shadow-xl">
                             Install Now <span>({size})</span>
                         </button>
                     )}

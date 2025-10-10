@@ -26,7 +26,7 @@ const Banner = () => {
                         <div className="flex justify-center items-center gap-4 my-10">
                             <a
                                 href="https://play.google.com/store/games?hl=en"
-                                className="btn bg-white text-[#001931] border-[#d2d2d2] py-5 font-semibold text-[20px]">
+                                className="btn bg-white text-[#001931] border-[#d2d2d2] py-5 font-semibold text-[20px] transition-transform duration-300 hover:scale-103 hover:shadow-xl">
                                 <img
                                     className="w-6"
                                     src={playStore}
@@ -36,7 +36,7 @@ const Banner = () => {
                             </a>
                             <a
                                 href="https://www.apple.com/app-store/"
-                                className="btn bg-white text-[#001931] border-[#d2d2d2] py-5 font-semibold text-[20px]">
+                                className="btn bg-white text-[#001931] border-[#d2d2d2] py-5 font-semibold text-[20px] transition-transform duration-300 hover:scale-103 hover:shadow-xl">
                                 <img
                                     className="w-6"
                                     src={appStore}

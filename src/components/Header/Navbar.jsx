@@ -66,21 +66,21 @@ const Navbar = () => {
                         <li>
                             <NavLink
                                 to={'/'}
-                                className="text-[16px] font-semibold">
+                                className="text-[16px] font-semibold transition-transform duration-300 hover:scale-103 hover:shadow-xl">
                                 Home
                             </NavLink>
                         </li>
                         <li>
                             <NavLink
                                 to={'/allapps'}
-                                className="text-[16px] font-semibold">
+                                className="text-[16px] font-semibold transition-transform duration-300 hover:scale-103 hover:shadow-xl">
                                 Apps
                             </NavLink>
                         </li>
                         <li>
                             <NavLink
                                 to={'/installation'}
-                                className="text-[16px] font-semibold">
+                                className="text-[16px] font-semibold transition-transform duration-300 hover:scale-103 hover:shadow-xl">
                                 Installation
                             </NavLink>
                         </li>
@@ -89,7 +89,7 @@ const Navbar = () => {
                 <div className="navbar-end">
                     <NavLink
                         to={'https://github.com/'}
-                        className="flex items-center gap-2 px-5 py-2 rounded-lg bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white font-inter text-[16px] font-semibold">
+                        className="flex items-center gap-2 px-5 py-2 rounded-lg bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white font-inter text-[16px] font-semibold transition-transform duration-300 hover:scale-103 hover:shadow-xl">
                         <FaGithub className="w-5 h-5" />
                         Contribute
                     </NavLink>

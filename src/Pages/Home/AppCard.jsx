@@ -7,7 +7,7 @@ const AppCard = ({ app }) => {
     const { image, companyName, title, downloads, ratingAvg, id } = app;
     return (
         <NavLink to={`/appDetails/${id}`}>
-            <div className="p-4 bg-white shadow-[0px_10px_20px_-12px_rgba(0,0,0,0.1)] rounded-[4px]">
+            <div className="p-4 bg-white shadow-[0px_10px_20px_-12px_rgba(0,0,0,0.1)] rounded-[4px] transition-transform duration-300 hover:scale-105 hover:shadow-lg">
                 <div className="bg-gray-300 h-[316px] rounded-[8px]">
                     <img
                         className="w-full h-full rounded-[8px] object-top "

@@ -24,7 +24,7 @@ const TrendingApps = () => {
                 </div>
             )}
 
-            <div className="mt-10 mx-auto w-fit rounded-sm bg-gradient-to-b from-[#632EE3] to-[#9F62F2] text-white font-semibold">
+            <div className="mt-10 mx-auto w-fit rounded-sm bg-gradient-to-b from-[#632EE3] to-[#9F62F2] text-white font-semibold transition-transform duration-300 hover:scale-103 hover:shadow-xl">
                 <NavLink
                     to={'/allapps'}
                     className="p-7 py-2 inline-block">
