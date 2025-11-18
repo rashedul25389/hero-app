@@ -8,7 +8,7 @@
 ---
 
 ## 🔗 Live Site
-Check out the live demo: [Hero Apps Live](https://your-live-site-url.com)
+Check out the live demo: [Hero Apps Live](https://web-hero-apps.netlify.app/)
 
 ---
 
